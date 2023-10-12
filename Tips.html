@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Physique.com</title>
+    <link rel="stylesheet" type="text/css" href="physiqueStyle.css">
+    <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+     <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+
+    <style>
+   @import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
+
+        .box1 {
+            opacity: 0.7;
+            width: 100%;
+            height: 200px;
+            background-image: url('https://t3.ftcdn.net/jpg/03/24/47/88/360_F_324478810_kCzSbmKPExJWXb7Ukf62fheZBoKgJCqt.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box1 p {
+            padding: 80px;
+            font-size:50px;
+            color: black;
+            font-style: bold;
+            font-family: fantasy, copperPlate;
+            letter-spacing: 7px;
+        }
+        .tip {
+            float: left;
+            background: white;
+            margin: 30px;
+            width:20%;
+            height:380px;
+            box-shadow: 10px 10px  5px darkCyan;
+            border-radius: 25px;
+
+        }
+        .tip img {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+        .tip p
+        {
+         padding-left: 10px;
+         font-size: 15px;
+         padding-right: 10px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(40, 40, 43)">
+    <div class="menu" id="topMenu">
+        <a href="physique.html" ><h4 style="font-family: 'Cinzel', serif;">HOME PAGE</h4></a>
+        <div class="dropdown">
+            <button class="dropbtn">WORKOUTS
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="Yoga.html">Yoga</a>
+              <a href="zumba.html">Zumba</a>
+              <a href="Cardio.html">Cardio</a>
+              <a href="Weight_Training.html">Weight Training</a>
+            </div>
+        </div>
+        <a href="Tips.html" class="active"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
+        <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
+    <a href="#hfkh" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
+
+    </div>
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" method="post" >
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required >
+
+            <button type="submit" id="sub" onclick="sub1()" >Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" style="background-color: darkBlue">Sign Up</button>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+
+        </div>
+
+
+        <div class="container" style="background-color: lavender">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <div class="box1">
+        <p>FEEL THE FIT CURIOSITY</p>
+    </div>
+
+    <div class="tip">
+        <img src="https://post.healthline.com/wp-content/uploads/2020/04/how-much-water-should-you-drink-per-day-732x549-thumbnail-732x549.jpg", height="200px", width="100%">
+        <p style="font-family: 'Metal', cursive;"><b><u>DRINK PLENTY OF WATER</u></b></p>
+    <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br>Drinking 2 cups before a meal can cut calories intake by 15% and keep skin glowing.</p>
+    </div>
+    <div class="tip">
+        <img src="https://c1.wallpaperflare.com/preview/18/23/629/female-woman-book-reading.jpg", height="200px", width="100%">
+        <p style="font-family: 'Metal', cursive;"><b><u>EAT ONE LESS BITE</u></b></p>
+    <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br>Cut 250 calories from your  food and burn 250 calories with exercise each day and you can lose 3500 calories,or 1 pound a week.</p>
+    </div>
+    <div class="tip">
+        <img src="https://www.azuravascularcare.com//assets/varicose-veins-walking.jpg", height="200px", width="100%">
+        <p style="font-family: 'Metal', cursive;"><b><u>MOVE THAT BODY</u></b></p>
+    <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br>30 minutes of walking can burn 200-250 calories.</p>
+    </div>
+    <div class="tip">
+      <img src="https://media.istockphoto.com/photos/theres-no-time-like-nap-time-picture-id1217582444?b=1&k=20&m=1217582444&s=170667a&w=0&h=cqLITIQxnVIuZPzQDVgp6JHhaIlQacQ_DO8qZb8gIAg=", height="200px", width="100%">
+        <p style="font-family: 'Metal', cursive;"><b><u>SLEEP</u></b></p>
+      <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br>It keeps you well because chemicals important to your immune system are secreted during sleep.</p>
+      </div>
+      <div class="tip">
+       <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80", height="200px", width="100%">
+          <p style="font-family: 'Metal', cursive;"><b><u>START OFF SLOW!</u></b></p>
+       <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br>Starting a new exercise routine can be challenging.The goal is to start slowly, build up your fitness level, and let your body rest from time to time to help prevent injuries.</p>
+    </div>
+    <div class="tip">
+        <img src="https://miro.medium.com/max/700/1*f_KXGquzWLrm9wpGof8V6A.jpeg", height="200px", width="100%">
+        <p style="font-family: 'Metal', cursive;"><b><u>PUMP YOURSELF UP!</u></b></p>
+        <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br> Positive self-talk can boost your motivation. Look in the mirror and observe how strong your muscles are. Applaud yourself for getting fit. Recognize the goals you've met.</p>
+    </div>
+    <div class="tip">
+        <img src="https://media.istockphoto.com/photos/active-curvy-women-jogging-picture-id1141393089?b=1&k=20&m=1141393089&s=170667a&w=0&h=0pCe9rQaLbnnvl_72WRPvsW73hJAtD_ER_NDrLyxqVM=", height="200px", width="100%">
+        <p style="font-family: 'Metal', cursive;" ><b><u>MOTIVATING MUSIC!</u></b></p>
+        <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br>Music can help take your workout up a notch if it’s music that appeals to you. It’s like having a trainer right in your ears.</p>
+    </div>
+    <div class="tip">
+        <img src="https://media.istockphoto.com/photos/stretching-out-picture-id609926926?b=1&k=20&m=609926926&s=170667a&w=0&h=9haJd6GCTe69ZIFq4wdpfYOxtOyJzmrM59UpPCHG3AI=", height="200px", width="100%">
+        <p style="font-family: 'Metal', cursive;"><b><u>STRETCH!</u></b></p>
+    <p style="font-family: 'Ibarra Real Nova', serif; font-weight: bold;"><br>Don't forget to stretch after exercise. If you can loosen your muscles post-workout, you’ll have happy joints ready to go for your next sweat session and less pain.</p>
+    </div>
+    <div id="footer"></div>
+   <script>
+       $(function()
+{
+  $("#footer").load("Footer.html");
+});
+
+   </script>
+<script src="Pscript.js"></script>
+</body>
+</html>

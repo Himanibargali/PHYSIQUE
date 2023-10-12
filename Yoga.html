@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Physique.com</title>
+  <link rel="stylesheet" type="text/css" href="physiqueStyle.css">
+  <script src="https://kit.fontawesome.com/bb3a38ccdb.js" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="yscript.css">
+     <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+</head>
+
+<body style="background-color:rgb(40, 40, 43);">
+  <div class="menu" id="topMenu">
+    <a href="physique.html" ><h4 style="font-family: 'Cinzel', serif;">HOME PAGE</h4></a>
+    <div class="dropdown">
+        <button class="dropbtn">WORKOUTS
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Yoga.html" class="active">Yoga</a>
+          <a href="zumba.html">Zumba</a>
+          <a href="Cardio.html">Cardio</a>
+          <a href="Weight_Training.html">Weight Training</a>
+        </div>
+    </div>
+    <a href="Tips.html"><h4 style="font-family: 'Cinzel', serif;">FITNESS TIPS</h4></a>
+    <a href="aboutus.html"><h4 style="font-family: 'Cinzel', serif;">ABOUT US</h4></a>
+     <a href="#signin" onclick="document.getElementById('id01').style.display='block'"><h4 style="font-family: 'Cinzel', serif;">SIGN IN</h4></a>
+
+    </div>
+
+
+    <div id="id01" class="modal">
+      <form class="modal-content animate" >
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required >
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" id="psw" required >
+
+            <button type="submit" id="sub" onclick="sub1()" >Login</button><br><center><p>Or Create Account<br></p></center>
+            <button type="submit" style="background-color: darkBlue">Sign Up</button>
+
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+
+        </div>
+
+
+        <div class="container" style="background-color: lavender">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+  <div id="imgGallary" class="slideshow-container">
+
+    <img src="https://images.news18.com/ibnlive/uploads/2021/06/1624044810_yoga-day-history.jpg"  width="100%" height="300">
+    <img src="https://images.indianexpress.com/2019/12/yoga_759.jpg"  width="100%" height="300">
+      <img src="https://www.skolaro.com/blog/wp-content/uploads/2019/06/international-yoga-day.jpg" width="100%" height="300">
+      <img src="https://gumlet.assettype.com/freepressjournal/2021-06/4fe960e8-b14d-44c3-afd6-b0bb588d1f9f/Untitled_design___2021_06_21T121443_517.png"  width="100%" height="300">
+
+</div>
+
+
+    <div class="yogaa" style="clear: both;" >
+        <h3 style="border-top:4px double IndianRed; border-bottom:4px double IndianRed;" > Beginner Yoga</h3>
+    </div>
+
+ <div class="superyoga">
+ <div class="yoga1">
+        <img id="image1" src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2019/06/pjimage-2-1561033959.jpg", height="200px", width="100%">
+    <button id="myBtn" >Sun Salutation</button>
+     </div>
+<div id="myModal" class="modal0">
+  <div class="modal0-content">
+    <span class="close0">&times;</span>
+
+     <iframe width="350" height="200" src="https://www.youtube.com/embed/-TSLAY_wVIU"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/uKoVR0mRk0M"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/4aEONuTVgYs"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/4aEONuTVgYs"  frameborder="1"  allowfullscreen></iframe>
+  </div>
+</div>
+
+
+ <div class="yoga1">
+        <img id="image2" src="https://yogapractice.com/wp-content/uploads/2020/10/16-Must-Know-Seated-Yoga-Poses-Grounding-Asanas.jpg", height="200px", width="100%">
+        <button id="myBtn1"  >Seated Yoga</button>
+     </div>
+<div id="myModal1" class="modal1">
+  <div class="modal1-content">
+    <span class="close1">&times;</span>
+
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/tkG277xvcgs" frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/RVUMgeNyWFU"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/XbF38kStoCM"  frameborder="1"  allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+<div class="yoga1">
+        <img id="image3"src="https://s3.envato.com/files/217309331/preview.jpg", height="200px", width="100%">
+        <button id="myBtn2" >Standing Yoga</button>
+     </div>
+    <div id="myModal2" class="modal2">
+  <div class="modal2-content">
+    <span class="close2">&times;</span>
+     <iframe width="350" height="200" src="https://www.youtube.com/embed/I1B_zYTadQ0"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/PelAUpzJngk"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/MvylnKkr_dI"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/q08mhAqaDAA"  frameborder="1" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+ <div class="yoga1">
+        <img id="image4" src="https://winsorfit.com/wp-content/uploads/2020/08/is-yoga-a-sport.jpg", height="200px", width="100%">
+        <button id="myBtn3"  >Floor Yoga</button>
+     </div>
+    <div id="myModal3" class="modal3">
+  <div class="modal3-content">
+    <span class="close3">&times;</span>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/2HAIILGByow"   frameborder="1"  allowfullscreen></iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/1vGfsnlyOGg"   frameborder="1"  allowfullscreen> </iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/P0WIWBQFY_M"   frameborder="1"  allowfullscreen> </iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/avYRpnaNNuw"   frameborder="1"  allowfullscreen> </iframe>
+       <iframe width="350" height="200" src="https://www.youtube.com/embed/VSDf3y7MFJI"   frameborder="1"  allowfullscreen> </iframe>
+  </div>
+</div>
+    <script>
+var modal0 = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+
+
+var span = document.getElementsByClassName("close0")[0];
+
+btn.onclick = function() {
+  modal0.style.display = "block";
+}
+
+span.onclick = function() {
+  modal0.style.display = "none";
+}
+
+
+
+</script>
+
+    <script>
+var modal1 = document.getElementById("myModal1");
+
+var btn1 = document.getElementById("myBtn1");
+
+
+var span1 = document.getElementsByClassName("close1")[0];
+
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+span1.onclick = function() {
+  modal1.style.display = "none";
+}
+
+
+
+</script>
+
+
+ <script>
+var modal2 = document.getElementById("myModal2");
+
+var btn2 = document.getElementById("myBtn2");
+
+
+var span2 = document.getElementsByClassName("close2")[0];
+
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+
+
+</script>
+
+
+ <script>
+var modal3 = document.getElementById("myModal3");
+
+var btn3 = document.getElementById("myBtn3");
+
+
+var span3 = document.getElementsByClassName("close3")[0];
+
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+
+
+</script>
+<script src="Pscript.js"></script>
+
+
+
+  <div class="yogaa" style="clear: both;" >
+        <h3 style="border-top:4px double IndianRed; border-bottom:4px double IndianRed;"> Yoga for Women</h3>
+    </div>
+ <div class="yoga1">
+        <img id="image5" src="https://images.squarespace-cdn.com/content/v1/528e7c71e4b0fe20836f0a7e/1569004590103-6IU7DE456ZFG12KKCWBT/get-glowing-skin-fast.jpg", height="200px", width="100%">
+        <button id="myBtn11" >Glowing Skin</button>
+     </div>
+<div id="myModal11" class="modal11">
+  <div class="modal11-content">
+    <span class="close11">&times;</span>
+
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/6c3Gka2i9wg"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/jkpooHwLBGY" frameborder="1"  allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+
+ <div class="yoga1">
+        <img id="image6" src="https://www.krishnawellness.com/wp-content/uploads/2019/05/yo2.jpg", height="200px", width="100%">
+        <button id="myBtn12"  >Over 50+ Age</button>
+     </div>
+<div id="myModal12" class="modal12">
+  <div class="modal12-content">
+    <span class="close12">&times;</span>
+
+
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/DEqLSQZVu-o"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/VSDf3y7MFJI"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/MvylnKkr_dI"  frameborder="1" allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/3CWgR2Vb7T4"  frameborder="1" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+ <div class="yoga1">
+        <img id="image7" src="https://images.tv9hindi.com/wp-content/uploads/2021/05/zcDHQMF7.jpg", height="200px", width="100%">
+        <button id="myBtn13" >Anti Aging</button>
+     </div>
+<div id="myModal13" class="modal13">
+  <div class="modal13-content">
+    <span class="close13">&times;</span>
+
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/fm7wQQ7Fkpk"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/2p-MbBIm7oI"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="1" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+   <div class="yoga1">
+        <img id="image8" src="https://ak.picdn.net/shutterstock/videos/8748346/thumb/1.jpg", height="200px", width="100%">
+        <button id="myBtn14" style="margin-left:60px;margin-bottom:30px;" >Transitional Period</button>
+     </div>
+<div id="myModal14" class="modal14">
+  <div class="modal14-content">
+    <span class="close14">&times;</span>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/6c3Gka2i9wg"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/_ZRneGWKt44"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE"  frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/jkpooHwLBGY" frameborder="1"  allowfullscreen></iframe>
+      <iframe width="350" height="200" src="https://www.youtube.com/embed/U6kid821DCM" frameborder="1"  allowfullscreen></iframe>
+  </div>
+</div>
+
+
+    <script>
+var modal11 = document.getElementById("myModal11");
+
+var btn11 = document.getElementById("myBtn11");
+
+
+var span11 = document.getElementsByClassName("close11")[0];
+
+btn11.onclick = function() {
+  modal11.style.display = "block";
+}
+
+span11.onclick = function() {
+  modal11.style.display = "none";
+}
+
+
+
+</script>
+
+
+  <script>
+var modal12 = document.getElementById("myModal12");
+
+var btn12 = document.getElementById("myBtn12");
+
+
+var span12 = document.getElementsByClassName("close12")[0];
+
+btn12.onclick = function() {
+  modal12.style.display = "block";
+}
+
+span12.onclick = function() {
+  modal12.style.display = "none";
+}
+
+
+</script>
+
+    <script>
+var modal13 = document.getElementById("myModal13");
+
+var btn13 = document.getElementById("myBtn13");
+
+
+var span13 = document.getElementsByClassName("close13")[0];
+
+btn13.onclick = function() {
+  modal13.style.display = "block";
+}
+
+span13.onclick = function() {
+  modal13.style.display = "none";
+}
+
+
+
+</script>
+
+    <script>
+var modal14 = document.getElementById("myModal14");
+
+var btn14 = document.getElementById("myBtn14");
+
+
+var span14 = document.getElementsByClassName("close14")[0];
+
+btn14.onclick = function() {
+  modal14.style.display = "block";
+}
+
+span14.onclick = function() {
+  modal14.style.display = "none";
+}
+
+
+
+</script>
+
+
+<div class="yogaa" style="clear: both;">
+  <h3 style="border-top:4px double IndianRed; border-bottom:4px double IndianRed;">Seasonal Yoga</h3>
+</div>
+<div class="yoga1">
+  <img id="image9" src="https://imgix.bustle.com/uploads/image/2018/3/20/f275d6a4-0859-4b93-a599-74207a30799c-stocksy_txpa78f3e96sss100_small_1338619.jpg?w=1200&fit=crop&crop=faces&auto=format%2Ccompress", height="200px", width="100%">
+  <button id="myBtn21" >Spring Season</button>
+</div>
+<div id="myModal21" class="modal21">
+<div class="modal21-content">
+<span class="close21">&times;</span>
+
+<iframe width="350" height="200" src="https://www.youtube.com/embed/oczFawDbobA" frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/hlBGtfp5dZY"  frameborder="1" allowfullscreen></iframe>
+<iframe width="350 "height="200" src="https://www.youtube.com/embed/HvMaXLA3_FU"  frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/2HAIILGByow"  frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/5isE-U9VX_w" frameborder="1"  allowfullscreen></iframe>
+</div>
+</div>
+
+
+
+
+  <div class="yoga1">
+    <img id="image10" src="https://kripalu.org/sites/default/files/styles/resource_header/public/1920x846_IMG_0579_yogasummer.jpg?itok=2nrPOEfG", height="200px", width="100%">
+    <button id="myBtn22" >Summer Season</button>
+  </div>
+  <div id="myModal22" class="modal22">
+  <div class="modal22-content">
+  <span class="close22">&times;</span>
+
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/Sv5SBCV05gc"  frameborder="1"  allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/vBw6NxOtboo"  frameborder="1" allowfullscreen></iframe>
+  <iframe width="350 "height="200" src="https://www.youtube.com/embed/k9OogBHl6ac"  frameborder="1"  allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/mcNfJJnAxnM"  frameborder="1"  allowfullscreen></iframe>
+  <iframe width="350" height="200" src="https://www.youtube.com/embed/uvYbLBCMuxE" frameborder="1"  allowfullscreen></iframe>
+  </div>
+  </div>
+
+
+
+<div class="yoga1">
+  <img id="image11" src="https://i0.wp.com/www.yogabasics.com/yogabasics2017/wp-content/uploads/2016/10/AdobeStock_56299310.jpeg?fit=375%2C250&ssl=1", height="200px", width="100%">
+  <button id="myBtn23" >Fall Season</button>
+</div>
+<div id="myModal23" class="modal23">
+<div class="modal23-content">
+<span class="close23">&times;</span>
+
+<iframe width="350" height="200" src="https://www.youtube.com/embed/EiGZr_xOJLU"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/SJxymk2eJfg"   frameborder="1" allowfullscreen></iframe>
+<iframe width="350 "height="200" src="https://www.youtube.com/embed/7VUUgnU44AQ"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/pIYpbjx-Hrs"  frameborder="1"  allowfullscreen></iframe>
+</div>
+</div>
+
+
+
+
+<div class="yoga1">
+  <img  id="image12" src="https://media.istockphoto.com/photos/woman-doing-yoga-outdoor-picture-id926555078?k=20&m=926555078&s=612x612&w=0&h=AqM7tqcCmdR_JQdjM5pBWgLjAXIPugQq05lRmDB4pm8=", height="200px", width="100%">
+  <button id="myBtn24" >Winter Season</button>
+</div>
+<div id="myModal24" class="modal24">
+<div class="modal24-content">
+<span class="close24">&times;</span>
+
+<iframe width="350" height="200" src="https://www.youtube.com/embed/6svNI_4D_vU"  frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/X7BugcxkFOs"   frameborder="1" allowfullscreen></iframe>
+<iframe width="350 "height="200" src="https://www.youtube.com/embed/AC10a0G1DYs"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/5isE-U9VX_w"   frameborder="1"  allowfullscreen></iframe>
+<iframe width="350" height="200" src="https://www.youtube.com/embed/RVUMgeNyWFU"  frameborder="1"  allowfullscreen></iframe>
+
+
+</div>
+</div>
+
+<script>
+  var modal21 = document.getElementById("myModal21");
+
+  var btn21 = document.getElementById("myBtn21");
+
+
+  var span21 = document.getElementsByClassName("close21")[0];
+
+  btn21.onclick = function() {
+    modal21.style.display = "block";
+  }
+
+  span21.onclick = function() {
+    modal21.style.display = "none";
+  }
+
+
+
+  </script>
+  <script>
+    var modal22 = document.getElementById("myModal22");
+
+    var btn22 = document.getElementById("myBtn22");
+
+
+    var span22 = document.getElementsByClassName("close22")[0];
+
+    btn22.onclick = function() {
+      modal22.style.display = "block";
+    }
+
+    span22.onclick = function() {
+      modal22.style.display = "none";
+    }
+
+
+
+    </script>
+<script>
+  var modal23 = document.getElementById("myModal23");
+
+  var btn23 = document.getElementById("myBtn23");
+
+
+  var span23 = document.getElementsByClassName("close23")[0];
+
+  btn23.onclick = function() {
+    modal23.style.display = "block";
+  }
+
+  span23.onclick = function() {
+    modal23.style.display = "none";
+  }
+
+
+  </script>
+<script>
+  var modal24 = document.getElementById("myModal24");
+
+  var btn24 = document.getElementById("myBtn24");
+
+
+  var span24 = document.getElementsByClassName("close24")[0];
+
+  btn24.onclick = function() {
+    modal24.style.display = "block";
+  }
+
+  span24.onclick = function() {
+    modal24.style.display = "none";
+  }
+
+
+  </script>
+ </div>
+ <div class="timer" style="clear:both;">
+  <h1 style="text-align:center;">Start a Workout on your own with a timer!</h1>
+  <center><button onclick="document.location='Timer.html'">Start Timer</button></center>
+</div>
+  <div id="footer"></div>
+  <script>
+      $(function()
+        {
+          $("#footer").load("Footer.html");
+        });
+  </script>
+ <script src="Pscript.js"></script>
+</body>
+</html>
